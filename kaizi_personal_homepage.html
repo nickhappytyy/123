@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凯子的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 0.5em;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        .contact-form button {
+            padding: 0.7em;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>凯子的个人主页</h1>
+        <p>欢迎来到凯子的个人主页！</p>
+    </header>
+    <nav>
+        <a href="#home">主页</a>
+        <a href="#about">个人简介</a>
+        <a href="#contact">联系方式</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>主页</h2>
+        <p>欢迎来到凯子的个人主页！</p>
+    </div>
+    <div class="container" id="about">
+        <h2>个人简介</h2>
+        <p><strong>姓名：</strong>凯子</p>
+        <p><strong>职位：</strong>国务院总理</p>
+        <p><strong>专业领域：</strong>经济领域</p>
+        <p><strong>个人特点：</strong>身高：下半身特长</p>
+        <p><strong>爱好：</strong>美女</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>联系方式</h2>
+        <form class="contact-form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">留言：</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">提交</button>
+        </form>
+        <p>关注我的社交媒体：</p>
+        <p><a href="http://weibo.com">微博</a> | <a href="http://weixin.qq.com">微信</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 凯子的个人主页. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
